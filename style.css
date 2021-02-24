@@ -48,3 +48,7 @@ body {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
+
+#ex-3 {
+  background-color: var(--secondary);
+}
