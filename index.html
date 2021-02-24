@@ -42,72 +42,72 @@
     <title>Hello, world!</title>
   </head>
   <body class="animate__animated animate__fadeIn">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
-
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
-
     <!--Ex1-->
 
     <section id="ex1" class="container my-3">
-      <div class="exercise-text text-center">
-        <h1>Excercise 1</h1>
-        <p>
-          Recreate this table just using Bootstrap4 classes or styling, without
-          adding / removing any DOM element.
-        </p>
-      </div>
-      <div class="row no-gutters text-white border border-dark ex-1 shadow-lg">
-        <div
-          class="col-12 col-md-6 text-center d-flex align-items-center justify-content-center bg-success flex-column"
-          style="height: 400px"
+      <div id="main-heading-wrapper" class="exercise-text text-center">
+        <h1
+          class="animate__animated animate__backInLeft display-1 text-left text-white mb-4"
         >
-          <p>First Column</p>
-          <p>Height 400px</p>
-          <p>Green-ish background</p>
-          <p>Text centered</p>
+          Bootstrap Layout
+        </h1>
+      </div>
+      <div
+        class="row no-gutters text-white ex-1 shadow-lg"
+        id="showCase"
+        style="height: 600px"
+      >
+        <div
+          class="col-12 col-md-6 text-center d-flex align-items-center justify-content-center flex-column animate__animated animate__backInRight"
+        >
+          <img src="https://picsum.photos/3000?random=896" class="" alt="" />
         </div>
-        <div class="col-12 col-md-2 bg-primary d-flex flex-column-reverse p-3">
-          <p>Second Column Text to the bottom</p>
+        <div class="col-12 col-md-2 d-flex flex-column-reverse">
+          <img src="https://picsum.photos/600/1000?random=34" class="" alt="" />
         </div>
         <div class="col-12 col-md-4">
           <div class="row no-gutters h-100">
-            <div class="col-12 bg-warning">Third Column Part 2</div>
-            <div class="col-12 bg-danger">Third Column Part 2</div>
-            <div class="col-12 bg-secondary">Third Column Part 2</div>
+            <div class="col-12">
+              <img
+                src="https://picsum.photos/500/150?random=33434"
+                class=""
+                alt=""
+              />
+            </div>
+            <div class="col-12">
+              <img
+                src="https://picsum.photos/500/150?random=435"
+                class=""
+                alt=""
+              />
+            </div>
+            <div class="col-12">
+              <img
+                src="https://picsum.photos/500/150?random=324344"
+                class=""
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- ex 2 -->
     <section class="container my-3">
-      <div class="exercise-text text-center">
-        <h2>Excercise 2</h2>
-        <p>
-          Recreate this table just using Bootstrap4 classes or styling, without
-          adding / removing any DOM element.
-        </p>
+      <div class="exercise-text text-center animate__animated animate__fadeIn">
+        <h2 class="text-white">Pricing? Who needs money?!</h2>
       </div>
-      <div class="row">
+      <div class="row animate__animated animate__bounceInUp">
         <div class="col-12 col-md-6 col-lg-4 mb-3">
-          <div class="card w-100 shadow text-center shadow">
-            <div class="card-member bg-secondary py-2">Free</div>
-            <div class="card-body">
+          <div class="card w-100 text-center bg-transparent shadow">
+            <div class="card-member backdrop-blur py-2">Free</div>
+            <div class="card-body bg-white">
               <h5 class="card-title">€0<span class="text-muted">/ mo</span></h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-block btn-outline-primary"
+              <a href="#" class="btn btn-block btn-outline-warning"
                 >Go somewhere</a
               >
             </div>
@@ -115,29 +115,29 @@
         </div>
 
         <div class="col-12 col-md-6 col-lg-4 mb-3">
-          <div class="card w-100 shadow text-center shadow">
-            <div class="card-member bg-secondary py-2">Free</div>
-            <div class="card-body">
+          <div class="card w-100 shadow text-center shadow bg-transparent">
+            <div class="card-member backdrop-blur py-2">Free</div>
+            <div class="card-body bg-white">
               <h5 class="card-title">€0<span class="text-muted">/ mo</span></h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-block btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-block btn-info">Go somewhere</a>
             </div>
           </div>
         </div>
 
         <div class="col-12 col-md-12 col-lg-4 mb-3">
-          <div class="card w-100 shadow text-center shadow">
-            <div class="card-member bg-secondary py-2">Free</div>
-            <div class="card-body">
+          <div class="card w-100 shadow text-center shadow bg-transparent">
+            <div class="card-member backdrop-blur py-2">Free</div>
+            <div class="card-body bg-white">
               <h5 class="card-title">€0<span class="text-muted">/ mo</span></h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-block btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-block btn-info">Go somewhere</a>
             </div>
           </div>
         </div>
@@ -146,16 +146,14 @@
 
     <!-- ex3 -->
     <section class="container my-3">
-      <div class="exercise-text text-center">
-        <h2>Excercise 3</h2>
-        <p>
-          Recreate this table just using Bootstrap4 classes or styling, without
-          adding / removing any DOM element.
-        </p>
+      <div
+        class="exercise-text text-center text-white animate__animated animate__fadeIn"
+      >
+        <h2>Take a look</h2>
       </div>
       <div class="row py-5" id="ex-3">
         <div class="col-12 col-md-6 col-lg-4 mb-3">
-          <div class="card w-100 shadow">
+          <div class="card w-100 shadow backdrop-blur">
             <img
               src="https://picsum.photos/300/200?random=2"
               class="card-img-top"
@@ -168,10 +166,10 @@
               </p>
               <div class="btns-and-p d-flex justify-content-between">
                 <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-outline-secondary">
+                  <button type="button" class="btn btn-outline-info">
                     View
                   </button>
-                  <button type="button" class="btn btn-outline-secondary">
+                  <button type="button" class="btn btn-outline-info">
                     Edit
                   </button>
                 </div>
@@ -181,7 +179,7 @@
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 mb-3">
-          <div class="card w-100 shadow">
+          <div class="card w-100 shadow backdrop-blur">
             <img
               src="https://picsum.photos/300/200?random=35"
               class="card-img-top"
@@ -194,10 +192,10 @@
               </p>
               <div class="btns-and-p d-flex justify-content-between">
                 <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-outline-secondary">
+                  <button type="button" class="btn btn-outline-info">
                     View
                   </button>
-                  <button type="button" class="btn btn-outline-secondary">
+                  <button type="button" class="btn btn-outline-info">
                     Edit
                   </button>
                 </div>
@@ -207,7 +205,7 @@
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 mb-3">
-          <div class="card w-100 shadow">
+          <div class="card w-100 shadow backdrop-blur">
             <img
               src="https://picsum.photos/300/200?random=3"
               class="card-img-top"
@@ -220,10 +218,10 @@
               </p>
               <div class="btns-and-p d-flex justify-content-between">
                 <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-outline-secondary">
+                  <button type="button" class="btn btn-outline-info">
                     View
                   </button>
-                  <button type="button" class="btn btn-outline-secondary">
+                  <button type="button" class="btn btn-outline-info">
                     Edit
                   </button>
                 </div>
@@ -233,7 +231,7 @@
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 mb-3">
-          <div class="card w-100 shadow">
+          <div class="card w-100 shadow backdrop-blur">
             <img
               src="https://picsum.photos/300/200?random=4"
               class="card-img-top"
@@ -246,10 +244,10 @@
               </p>
               <div class="btns-and-p d-flex justify-content-between">
                 <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-outline-secondary">
+                  <button type="button" class="btn btn-outline-info">
                     View
                   </button>
-                  <button type="button" class="btn btn-outline-secondary">
+                  <button type="button" class="btn btn-outline-info">
                     Edit
                   </button>
                 </div>
@@ -259,7 +257,7 @@
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 mb-3">
-          <div class="card w-100 shadow">
+          <div class="card w-100 shadow backdrop-blur">
             <img
               src="https://picsum.photos/300/200?random=5"
               class="card-img-top"
@@ -272,10 +270,10 @@
               </p>
               <div class="btns-and-p d-flex justify-content-between">
                 <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-outline-secondary">
+                  <button type="button" class="btn btn-outline-info">
                     View
                   </button>
-                  <button type="button" class="btn btn-outline-secondary">
+                  <button type="button" class="btn btn-outline-info">
                     Edit
                   </button>
                 </div>
@@ -285,7 +283,7 @@
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 mb-3">
-          <div class="card w-100 shadow">
+          <div class="card w-100 shadow backdrop-blur">
             <img
               src="https://picsum.photos/300/200?random=6"
               class="card-img-top"
@@ -298,10 +296,10 @@
               </p>
               <div class="btns-and-p d-flex justify-content-between">
                 <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-outline-secondary">
+                  <button type="button" class="btn btn-outline-info">
                     View
                   </button>
-                  <button type="button" class="btn btn-outline-secondary">
+                  <button type="button" class="btn btn-outline-info">
                     Edit
                   </button>
                 </div>
@@ -311,7 +309,7 @@
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 mb-3">
-          <div class="card w-100 shadow">
+          <div class="card w-100 shadow backdrop-blur">
             <img
               src="https://picsum.photos/300/200?random=7"
               class="card-img-top"
@@ -324,10 +322,10 @@
               </p>
               <div class="btns-and-p d-flex justify-content-between">
                 <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-outline-secondary">
+                  <button type="button" class="btn btn-outline-info">
                     View
                   </button>
-                  <button type="button" class="btn btn-outline-secondary">
+                  <button type="button" class="btn btn-outline-info">
                     Edit
                   </button>
                 </div>
@@ -337,7 +335,7 @@
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 mb-3">
-          <div class="card w-100 shadow">
+          <div class="card w-100 shadow backdrop-blur">
             <img
               src="https://picsum.photos/300/200?random=9"
               class="card-img-top"
@@ -350,10 +348,10 @@
               </p>
               <div class="btns-and-p d-flex justify-content-between">
                 <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-outline-secondary">
+                  <button type="button" class="btn btn-outline-info">
                     View
                   </button>
-                  <button type="button" class="btn btn-outline-secondary">
+                  <button type="button" class="btn btn-outline-info">
                     Edit
                   </button>
                 </div>
@@ -363,7 +361,7 @@
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 mb-3">
-          <div class="card w-100 shadow">
+          <div class="card w-100 shadow backdrop-blur">
             <img
               src="https://picsum.photos/300/200?random=12"
               class="card-img-top"
@@ -376,10 +374,10 @@
               </p>
               <div class="btns-and-p d-flex justify-content-between">
                 <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-outline-secondary">
+                  <button type="button" class="btn btn-outline-info">
                     View
                   </button>
-                  <button type="button" class="btn btn-outline-secondary">
+                  <button type="button" class="btn btn-outline-info">
                     Edit
                   </button>
                 </div>
