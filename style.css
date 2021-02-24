@@ -48,3 +48,23 @@ body {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
+
+@media (max-width: 767px) {
+  #ex1 > div.row.no-gutters.text-white > div.col-12.col-md-4 > div > *,
+  #ex1
+    > div.row.no-gutters.text-white
+    > div.col-12.col-md-2.bg-primary.d-flex.flex-column-reverse.p-3 {
+    min-height: 100px;
+  }
+}
+
+.search-wrapper input {
+  flex: 1 1 70%;
+}
+.search-wrapper button {
+  flex: 1 1 30%;
+}
+
+.search-wrapper {
+  max-width: 100%;
+}

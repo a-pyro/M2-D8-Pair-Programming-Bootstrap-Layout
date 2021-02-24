@@ -58,7 +58,7 @@
 
     <!--Ex1-->
 
-    <section class="container my-3">
+    <section id="ex1" class="container my-3">
       <div class="exercise-text text-center">
         <h1>Excercise 1</h1>
         <p>
@@ -68,7 +68,7 @@
       </div>
       <div class="row no-gutters text-white">
         <div
-          class="col-6 text-center d-flex align-items-center justify-content-center bg-success flex-column"
+          class="col-12 col-md-6 text-center d-flex align-items-center justify-content-center bg-success flex-column"
           style="height: 400px"
         >
           <p>First Column</p>
@@ -76,10 +76,10 @@
           <p>Green-ish background</p>
           <p>Text centered</p>
         </div>
-        <div class="col-2 bg-primary d-flex flex-column-reverse p-3">
+        <div class="col-12 col-md-2 bg-primary d-flex flex-column-reverse p-3">
           <p>Second Column Text to the bottom</p>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-4">
           <div class="row no-gutters h-100">
             <div class="col-12 bg-warning">Third Column Part 2</div>
             <div class="col-12 bg-danger">Third Column Part 2</div>
@@ -509,27 +509,20 @@
         </div>
         <!-- aside -->
         <div class="col-12 col-md-4">
-          <div class="row">
+          <div class="row no-gutters">
             <div class="col-12">
               <div class="card">
                 <div class="card-header">Find in my blog</div>
                 <div class="card-body">
-                  <form class="form-inline my-2 my-lg-0">
-                    <div class="search-wrapper d-flex w-100">
-                      <input
-                        class="form-control"
-                        type="search"
-                        placeholder="Search"
-                        aria-label="Search"
-                      />
-                      <button
-                        class="btn btn-secondary my-2 my-sm-0"
-                        type="submit"
-                      >
-                        Search
-                      </button>
-                    </div>
-                  </form>
+                  <input
+                    class="form-control"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-secondary my-2 my-sm-0" type="submit">
+                    Search
+                  </button>
                 </div>
               </div>
             </div>
